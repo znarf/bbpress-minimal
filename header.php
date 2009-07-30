@@ -35,7 +35,7 @@
 		}
 		?>
 
-		<?php if (function_exists('ld_top_bar') && $top_bar) { ld_top_bar(); } else { ?>
+		<?php if (class_exists('Ld_Ui') && method_exists('Ld_Ui', 'top_bar') && $top_bar) { Ld_Ui::top_bar(); } else { ?>
 
 			<div class="h6e-simple-header">
 				<?php if ( !in_array( bb_get_location(), array( 'login-page', 'register-page' ) ) ) login_form(); ?>
