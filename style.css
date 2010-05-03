@@ -864,3 +864,19 @@ tr.bb-category td {
 	background-color: #59ef86;
 	border-color: #319f52;
 }
+
+/* New Rules */
+
+.postform {
+	width:56em;
+}
+
+.postform #topic, .postform #tags-input {
+	border-radius:3px 3px 3px 3px;
+	-moz-border-radius:3px 3px 3px 3px;
+	-webkit-border-radius:3px 3px 3px 3px;
+	border:1px solid #CCCCCC;
+	display:block;
+	margin:5px 0;
+	padding:5px;
+}
