@@ -33,6 +33,19 @@ function h6e_minimal_css()
 
 <?php bb_head(); ?>
 
+<?php if (class_exists('Ld_Ui')) : ?>
+	<style type="text/css">
+	<?php
+	$colors = Ld_Ui::getApplicationColors();
+	echo ".infobox, #topic-tags { border-color:#" . $colors['ld-colors-border'] . "; }". "\n";
+	echo ".threadpost, .postform, #latest, #forumlist, #favorites {
+		color:#" . $colors['ld-colors-text-3'] . "; border-color:#" . $colors['ld-colors-border-3'] . "; background-color:#" . $colors['ld-colors-background-3'] . "; }". "\n";
+	echo ".threadpost a, .postform a, #latest a, #forumlist a, #favorites a { color:#" . $colors['ld-colors-text-3'] . "; }". "\n";
+	echo "#latest th, #forumlist th, #favorites th { background-color:rgba(0, 0, 0, 0.1) }"
+	?>
+	</style>
+<?php endif ?>
+
 </head>
 
 <body id="<?php bb_location(); ?>">
