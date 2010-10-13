@@ -48,7 +48,7 @@ function h6e_minimal_css()
 
 </head>
 
-<body id="<?php bb_location(); ?>">
+<body id="<?php bb_location(); ?>" class="h6e-layout">
 	<div id="wrapper">
 
 		<?php
